@@ -18,27 +18,33 @@ h1 {
 .intro {
   height: 500px;
   width: 100%;
-  padding: 40px;
+  padding: 75px;
   color: #fafafa;
   background-color: #1d1e24; }
 
 .skills {
   height: 500px;
   width: 100%;
-  padding: 40px;
+  padding: 75px;
   color: #1d1e24; }
 
 .resume {
   height: 500px;
   width: 100%;
-  padding: 40px;
+  padding: 75px;
   color: #1d1e24;
   background-color: white; }
+
+.contact {
+  height: 500px;
+  width: 100%;
+  padding: 75px;
+  color: #1d1e24; }
 
 .footer {
   height: 25px;
   width: 100%;
-  padding: 40px;
+  padding: 20px 75px 20px 75px;
   color: white;
   background-color: #1d1e24; }
 

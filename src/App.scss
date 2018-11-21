@@ -1,0 +1,30 @@
+.flex-container {
+  width:            90%;
+  height:           auto;
+  margin:           auto;
+  display:          flex;
+  flex-direction:   row;
+  flex-wrap:        wrap;
+  border: solid 1px red;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.content-40 {
+  width: 40%;
+  border: solid 1px blue;
+  height: auto;
+}
+
+.content-60 {
+  width: 60%;
+  border: solid 1px pink;
+  height: auto;
+}
+

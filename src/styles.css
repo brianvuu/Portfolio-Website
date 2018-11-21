@@ -4,48 +4,43 @@
   padding: 0; }
 
 body {
-  background-color: #fafafa;
-  font-family: "helvetica"; }
+  background-color: #f7f7f7;
+  font-family: "helvetica";
+  font-weight: 100; }
 
 h1 {
   font-weight: 200; }
 
-/* Sections */
+/* Container */
 .container {
   height: auto;
   width: 100%; }
 
-.intro {
-  height: 500px;
+/* Sections */
+.intro, .skills,
+.contact, .resume {
+  height: auto;
   width: 100%;
-  padding: 75px;
-  color: #fafafa;
+  padding: 70px 0 70px 0; }
+
+.intro {
+  color: #f7f7f7;
   background-color: #1d1e24; }
 
-.skills {
-  height: 500px;
-  width: 100%;
-  padding: 75px;
+.skills,
+.contact {
   color: #1d1e24; }
 
 .resume {
-  height: 500px;
-  width: 100%;
-  padding: 75px;
   color: #1d1e24;
   background-color: white; }
 
-.contact {
-  height: 500px;
-  width: 100%;
-  padding: 75px;
-  color: #1d1e24; }
-
 .footer {
-  height: 25px;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
   width: 100%;
-  padding: 20px 75px 20px 75px;
-  color: white;
+  color: #f7f7f7;
   background-color: #1d1e24; }
 
 /*# sourceMappingURL=styles.css.map */

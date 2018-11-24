@@ -1,0 +1,11 @@
+.flex-container {
+  border: solid 1px red;
+}
+
+.content-40 {
+  border: solid 1px blue;
+}
+
+.content-60 {
+  border: solid 1px pink;
+}

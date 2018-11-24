@@ -5,10 +5,6 @@ import { Button, Icon } from 'semantic-ui-react';
 import SkillCard from './components/SkillCard';
 import ContactForm from './components/ContactForm';
 
-const Title = styled.div`
-    width: 100%;
-    border: solid 1px yellow;
-`
 const PortfolioImg = styled.div`
     width: 300px;
     height: 200px;
@@ -36,9 +32,9 @@ class App extends Component {
 
         <div className="intro">
           <div className="flex-container align-center">
-            <Title>
+            <div className="content-100">
               <h1>Intro</h1>
-            </Title>
+            </div>
             <div className="content-40">
               <PortfolioImg />
             </div>
@@ -56,16 +52,25 @@ class App extends Component {
 
         <div className="skills">
           <div className="flex-container">
+            <div className="content-100">
             <h1>Skills</h1>
+            </div>
+            <div className="content-100">
+            <p>
+              My skillset focuses on front-end development, working with layouts, styling and JavaScript. I am familiar working with MVC framworks, RESTful APIs and Databases.
+            </p>
+            </div>
+
             <SkillCard />
           </div>
+
         </div>
 
         <div className="resume">
           <div className="flex-container align-bottom">
-            <Title>
+            <div className="content-100">
               <h1>Resume</h1>
-            </Title>
+            </div>
             <div className="content-40">
             <PortfolioImg />
             </div>

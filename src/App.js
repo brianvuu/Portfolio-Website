@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Button, Icon } from 'semantic-ui-react';
 import SkillCard from './components/SkillCard';
 import ContactForm from './components/ContactForm';
+import Test from './components/Test'
 
 const PortfolioImg = styled.div`
     width: 300px;
@@ -60,10 +61,8 @@ class App extends Component {
               My skillset focuses on front-end development, working with layouts, styling and JavaScript. I am familiar working with MVC framworks, RESTful APIs and Databases.
             </p>
             </div>
-
-            <SkillCard />
+            <Test />
           </div>
-
         </div>
 
         <div className="resume">

@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components';
 import { Button, Icon } from 'semantic-ui-react';
-import SkillCard from './components/SkillCard';
-import ContactForm from './components/ContactForm';
-import Test from './components/Test'
+import Skills from './components/Skills';
+// import ContactForm from './components/ContactForm';
 
 const PortfolioImg = styled.div`
     width: 300px;
@@ -23,6 +22,13 @@ const LargeText = styled.span`
 const MediumText = styled.span`
     font-size: 18px;
 `
+const CardsContainer = styled.div`
+  width:            100%;
+  height:           auto;
+  display:          flex;
+  flex-direction:   row;
+  flex-wrap:        wrap;
+`
 
 class App extends Component {
 
@@ -30,6 +36,7 @@ class App extends Component {
     return (
 
       <div className="container">
+
 
         <div className="intro">
           <div className="flex-container align-center">
@@ -51,19 +58,23 @@ class App extends Component {
           </div>
         </div>
 
+
         <div className="skills">
           <div className="flex-container">
             <div className="content-100">
-            <h1>Skills</h1>
+              <h1>Skills</h1>
             </div>
             <div className="content-100">
-            <p>
-              My skillset focuses on front-end development, working with layouts, styling and JavaScript. I am familiar working with MVC framworks, RESTful APIs and Databases.
-            </p>
+              <p>
+                My skillset focuses on front-end development, working with layouts, styling and JavaScript. I am familiar working with MVC framworks, RESTful APIs and Databases.
+              </p>
             </div>
-            <Test />
+            <CardsContainer>
+              <Skills />
+            </CardsContainer>
           </div>
         </div>
+
 
         <div className="resume">
           <div className="flex-container align-bottom">
@@ -88,15 +99,18 @@ class App extends Component {
           </div>
         </div>
 
+
         <div className="contact">
           <div className="flex-container">
             <h1>Contact</h1>
           </div>
         </div>
 
+
         <div className="footer">
           <p>your-website.com | Created by John Doe | 2018</p>
         </div>
+
 
       </div>
 

@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import styled from 'styled-components';
 
-const CardImg = styled.div`
-  width:            100%;
-  height:           100px;
-  background-size:      75px;
-  background-repeat:    no-repeat;
-  background-position:  center;
-  background-image:     url('http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png');
-`
 const CardName = styled.div`
   width:            100%;
   height:           30px;
@@ -18,16 +10,17 @@ const CardName = styled.div`
   text-align:       center;
   font-weight:      600;
 `
-
 const cards = [
-  { id: 1, name: 'HTML', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' },
-  { id: 2, name: 'CSS', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' },
-  { id: 3, name: 'CSS', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' },
-  { id: 4, name: 'CSS', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' },
-  { id: 5, name: 'HTML', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' },
-  { id: 6, name: 'CSS', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' },
-  { id: 7, name: 'CSS', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' },
-  { id: 8, name: 'CSS', img: 'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png' }
+  { name: 'HTML5', img: 'html.jpg' },
+  { name: 'CSS3', img: 'css.jpg' },
+  { name: 'JavaScript', img: 'javascript.jpg' },
+  { name: 'React', img: 'react.png' },
+  { name: 'jQuery', img: 'jquery.png' },
+  { name: 'SEO', img: 'seo.png' },
+  { name: 'Sass', img: 'sass.png' },
+  { name: 'Styled-Components', img: 'styledcomponents.png' },
+  { name: 'Git / GitHub', img: 'git.png' },
+  { name: 'Terminal', img: 'terminal.png' },
 ]
 
 class Skills extends Component {
@@ -36,8 +29,10 @@ class Skills extends Component {
     return(
     <>
       {cards.map( card => (
-        <div className='content-20 cardbox' key={card.id}>
-          <CardImg />
+        <div className='content-20 card-box' key={card.name}>
+          <div className='card-img'>
+            <img src={require(`../images/${card.img}`)} alt={`${card.name} logo`} />
+          </div>
           <CardName>
             {card.name}
           </CardName>

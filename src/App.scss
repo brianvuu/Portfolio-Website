@@ -15,10 +15,21 @@
   align-items: flex-end;
 }
 
-.cardbox {
+.card-box {
   margin: 20px 2.5% 0 2.5%;
   border: solid 1px green;
   border-radius: 5px;
+}
+
+.card-img {
+  width:            100%;
+  height:           auto;
+  text-align:       center;
+  padding: 15px 0 15px 0;
+}
+
+.card-img img {
+  height: 75px;
 }
 
 .content-20 {

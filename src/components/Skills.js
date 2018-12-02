@@ -10,6 +10,7 @@ const CardName = styled.div`
   text-align:       center;
   font-weight:      600;
 `
+
 const cards = [
   { name: 'HTML5', img: 'html.jpg' },
   { name: 'CSS3', img: 'css.jpg' },
@@ -31,7 +32,10 @@ class Skills extends Component {
       {cards.map( card => (
         <div className='content-20 card-box' key={card.name}>
           <div className='card-img'>
-            <img src={require(`../images/${card.img}`)} alt={`${card.name} logo`} />
+            <img 
+              src={require(`../images/${card.img}`)} 
+              alt={`${card.name} logo`} 
+            />
           </div>
           <CardName>
             {card.name}

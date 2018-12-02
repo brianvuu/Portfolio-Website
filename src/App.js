@@ -2,25 +2,27 @@ import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components';
 import { Button, Icon } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import Skills from './components/Skills';
+
 // import ContactForm from './components/ContactForm';
 
 const PortfolioImg = styled.div`
-    width: 300px;
-    height: 200px;
-    margin: auto;
-    border: solid 1px skyblue;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('https://www.shareicon.net/download/2017/06/21/887406_man_512x512.png');
+  width:            300px;
+  height:           200px;
+  margin:           auto;
+  border:           solid 1px skyblue;
+  background-size:      contain;
+  background-repeat:    no-repeat;
+  background-position:  center;
+  background-image:     url('https://www.shareicon.net/download/2017/06/21/887406_man_512x512.png');
 `
 const LargeText = styled.span`
-    font-size: 35px;
-    font-weight: 1000;
+  font-size:        35px;
+  font-weight:      1000;
 `
 const MediumText = styled.span`
-    font-size: 18px;
+  font-size:        18px;
 `
 const CardsContainer = styled.div`
   width:            100%;
@@ -36,8 +38,7 @@ class App extends Component {
     return (
 
       <div className="container">
-
-
+      
         <div className="intro">
           <div className="flex-container align-center">
             <div className="content-100">
@@ -58,7 +59,6 @@ class App extends Component {
           </div>
         </div>
 
-
         <div className="skills">
           <div className="flex-container">
             <div className="content-100">
@@ -75,7 +75,6 @@ class App extends Component {
           </div>
         </div>
 
-
         <div className="resume">
           <div className="flex-container align-bottom">
             <div className="content-100">
@@ -86,19 +85,20 @@ class App extends Component {
             </div>
             <div className="content-60">
               <Button.Group basic>
-                <Button>
-                  <Icon name='linkify' />
-                  See My Resume
-                </Button>
-                <Button>
-                  <Icon name='cloud download' />
-                  Download
-                </Button>
+                <Link to="/resume" target="_blank">
+                  <Button>
+                    <Icon name='linkify' />
+                    See My Resume
+                  </Button>
+                </Link>
+              <Button>
+                <Icon name='cloud download' />
+                Download
+              </Button>
               </Button.Group>
             </div>
           </div>
         </div>
-
 
         <div className="contact">
           <div className="flex-container">
@@ -106,11 +106,9 @@ class App extends Component {
           </div>
         </div>
 
-
         <div className="footer">
           <p>your-website.com | Created by John Doe | 2018</p>
         </div>
-
 
       </div>
 

@@ -62,7 +62,7 @@ class App extends Component {
         <div className="skills">
           <div className="flex-container">
             <div className="content-100">
-              <h1>Skills</h1>
+              <h1>Technical Skills</h1>
             </div>
             <div className="content-100">
               <p>

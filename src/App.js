@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import styled from 'styled-components';
-import { Button, Icon } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 import Skills from './components/Skills';
+import ResumeModal from './components/ResumeModal';
 
 // import ContactForm from './components/ContactForm';
 
@@ -81,21 +80,10 @@ class App extends Component {
               <h1>Resume</h1>
             </div>
             <div className="content-40">
-            <PortfolioImg />
+              <PortfolioImg />
             </div>
             <div className="content-60">
-              <Button.Group basic>
-                <Link to="/resume" target="_blank">
-                  <Button>
-                    <Icon name='linkify' />
-                    See My Resume
-                  </Button>
-                </Link>
-              <Button>
-                <Icon name='cloud download' />
-                Download
-              </Button>
-              </Button.Group>
+              <ResumeModal />
             </div>
           </div>
         </div>

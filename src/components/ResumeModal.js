@@ -1,10 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
-import { Button, Icon, Modal } from 'semantic-ui-react'
-
-// Temporary for testing ////////////
-import html from '../images/html.jpg'
-/////////////////////////////////////
+import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
 
 class ResumeModal extends Component {
   state = { open: false }
@@ -17,27 +12,28 @@ class ResumeModal extends Component {
 
     return (
       <div>
-        <Button.Group basic>
-          <Link to="/resume" target="_blank">
-            <Button>
-            {/* <Button onClick={this.show('mini')}> */}
-              <Icon name='linkify' /> See My Resume
-            </Button>
-          </Link>
-          <Button onClick={this.show('mini')}>
+        <Modal trigger={
+          <Button size='big' color='blue'>
+            <Icon name='eye' /> Preview
+          </Button>
+        }>
+          <Modal.Header>John Doe's Resume</Modal.Header>
+          <Modal.Content image scrolling>
+            <Image src={require('../files/developerresume.jpg')} wrapped centered/>
+          </Modal.Content>
+        </Modal>
+          <Button size='big' color='blue' onClick={this.show('mini')}>
             <Icon name='cloud download' /> Download
           </Button>
-        </Button.Group>
-    
         <Modal size={size} open={open} onClose={this.close}>
           <Modal.Header>Confirm Download</Modal.Header>
           <Modal.Content>
-            <p>download <strong>johndoeresume.pdf</strong> {'(482kb)'}</p>
+            <p><strong>download johndoeresume.pdf</strong> {'(482kb)'}</p>
           </Modal.Content>
           <Modal.Actions>
-            <Button content='Cancel' />
-            <a href={html} download>
-              <Button icon='cloud download' content='Download' />
+            <Button content='Cancel' onClick={this.close}/>
+            <a href={require('../files/developerresume.jpg')} download>
+              <Button icon='cloud download' content='Download' onClick={this.close} />
             </a>
           </Modal.Actions>
         </Modal>

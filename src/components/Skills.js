@@ -5,21 +5,18 @@ import styled from 'styled-components';
 const CardName = styled.div`
   width:            100%;
   height:           30px;
-  border:           solid 1px black;
   line-height:      30px;
   text-align:       center;
   font-weight:      600;
 `
 
 const cards = [
-  { name: 'HTML5', img: 'html.jpg' },
-  { name: 'CSS3', img: 'css.jpg' },
-  { name: 'JavaScript', img: 'javascript.jpg' },
+  { name: 'HTML5', img: 'html.png' },
+  { name: 'CSS3', img: 'css.png' },
+  { name: 'JavaScript', img: 'javascript.png' },
   { name: 'React', img: 'react.png' },
-  { name: 'jQuery', img: 'jquery.png' },
-  { name: 'SEO', img: 'seo.png' },
   { name: 'Sass', img: 'sass.png' },
-  { name: 'Styled-Components', img: 'styledcomponents.png' },
+  { name: 'SEO', img: 'seo.png' },
   { name: 'Git / GitHub', img: 'git.png' },
   { name: 'Terminal', img: 'terminal.png' },
 ]

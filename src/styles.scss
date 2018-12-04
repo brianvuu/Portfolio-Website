@@ -10,14 +10,14 @@ $default-padding:   70px 0 70px 0;
 
 // Colors
 $bg-dark:           rgb(29,30,36);
-$bg-light:          rgb(247,247,247);
-$bg-white:          rgb(255,255,255);
-$font-dark:         rgb(29,30,36);
+$bg-light:          rgb(29,30,36);
+$bg-white:          rgb(29,30,36);
+$font-dark:         rgb(247,247,247);
 $font-light:        rgb(247,247,247);
 
 
 /* Body */
-* { margin: 0; padding: 0; }
+* { margin: auto; padding: 0; }
 
 body {
   background-color: $bg-light;
@@ -33,6 +33,7 @@ h1 {
 .container {
   height:             auto;
   width:              $full-width;
+  max-width: 1000px;
 }
 
 /* Sections */
@@ -44,6 +45,7 @@ h1 {
 
 .intro {
   @extend %default;
+  margin-top: 100px;
   color:              $font-light;
   background-color:   $bg-dark;
 }

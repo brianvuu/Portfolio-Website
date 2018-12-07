@@ -1,0 +1,25 @@
+/* Mobile Responsive */
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    width:      90%;
+  }
+
+  .flex-20 {
+    width:      45%;
+  }
+  
+  .flex-40,
+  .flex-60 {
+    width:      100%;
+    margin-top: 35px;
+  }
+
+  .portfolio-img {
+    img { width: 175px; }  
+  }
+
+  .intro-text {
+    font-size:   14px;
+  }
+
+  }

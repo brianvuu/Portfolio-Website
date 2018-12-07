@@ -27,7 +27,7 @@ class Skills extends Component {
     return(
     <>
       {cards.map( card => (
-        <div className='content-20 card-box' key={card.name}>
+        <div className='flex-20 card-box' key={card.name}>
           <div className='card-img'>
             <img 
               src={require(`../images/${card.img}`)} 

@@ -1,0 +1,133 @@
+/* Main, Body */
+* {
+  margin: auto;
+  padding: 0; }
+
+body {
+  background-color: #0f0f0f;
+  color: #f7f7f7;
+  font-family: "helvetica";
+  font-weight: 100; }
+
+h1 {
+  font-weight: 200; }
+
+/* Container, Intro, Skills, Contact, Resume, Footer */
+.container {
+  height: auto;
+  width: 100%; }
+
+.intro {
+  height: 100vh;
+  min-height: 450px;
+  width: 100%; }
+
+.skills, .contact, .resume {
+  height: auto;
+  width: 100%; }
+
+.footer {
+  width: 100%;
+  height: 70px; }
+
+/* Flex */
+.flex-container {
+  width: 80%;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.flex-container, .flex-20, .flex-40, .flex-60, .flex-80, .flex-100 {
+  height: auto; }
+
+.flex-20 {
+  width: 20%; }
+
+.flex-40 {
+  width: 40%; }
+
+.flex-60 {
+  width: 60%; }
+
+.flex-80 {
+  width: 80%; }
+
+.flex-100 {
+  width: 100%; }
+
+.flex-row {
+  flex-direction: row; }
+
+.flex-column {
+  flex-direction: column; }
+
+/* Additional Styling */
+.centered {
+  text-align: center; }
+
+.intro-text {
+  font-size: 18px; }
+
+.full-height {
+  height: 100%; }
+
+.spacing-sm {
+  padding: 50px 0 50px 0; }
+
+.spacing-lg {
+  padding: 100px 0 100px 0; }
+
+.offset {
+  margin-top: -25px; }
+
+.dark-font {
+  color: #0f0f0f;
+  font-size: 16px; }
+
+/* Cards for Skills Section */
+.card-box {
+  margin: 20px 1px 10px 1px; }
+
+.card-img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 15px 0 15px 0; }
+  .card-img img {
+    height: 50px; }
+
+/* Images */
+.intro-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("https://adroitsources.com/abhay/images/backgrounds/components-title-bg.jpg"); }
+
+.portfolio-img img {
+  width: 250px; }
+
+.pattern-bg {
+  background-image: url("https://allfreedesigns.com/wp-content/uploads/2015/06/black-patterns-16.jpg"); }
+
+/* Mobile Responsive */
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    width: 90%; }
+
+  .flex-20 {
+    width: 45%; }
+
+  .flex-40,
+  .flex-60 {
+    width: 100%;
+    margin-top: 35px; }
+
+  .portfolio-img img {
+    width: 175px; }
+
+  .intro-text {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=styles.css.map */

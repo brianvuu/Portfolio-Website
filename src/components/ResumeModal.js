@@ -13,8 +13,8 @@ class ResumeModal extends Component {
     return (
       <div>
         <Modal trigger={
-          <Button size='big' color='blue'>
-            <Icon name='eye' /> Preview
+          <Button inverted size='medium' color='blue'>
+            <Icon name='file' /> See My Resume
           </Button>
         }>
           <Modal.Header>John Doe's Resume</Modal.Header>
@@ -22,13 +22,13 @@ class ResumeModal extends Component {
             <Image src={require('../files/developerresume.jpg')} wrapped centered/>
           </Modal.Content>
         </Modal>
-          <Button size='big' color='blue' onClick={this.show('mini')}>
+          <Button inverted size='medium' color='blue' onClick={this.show('mini')}>
             <Icon name='cloud download' /> Download
           </Button>
         <Modal size={size} open={open} onClose={this.close}>
           <Modal.Header>Confirm Download</Modal.Header>
           <Modal.Content>
-            <p><strong>download johndoeresume.pdf</strong> {'(482kb)'}</p>
+            <p className="dark-font">download johndoeresume.pdf {'(482kb)'}</p>
           </Modal.Content>
           <Modal.Actions>
             <Button content='Cancel' onClick={this.close}/>
